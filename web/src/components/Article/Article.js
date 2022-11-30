@@ -14,7 +14,7 @@ const Article = ({ article, summary = false }) => {
           <Link to={routes.article({ id: article.id })}>{article.title}</Link>
         </h2>
       </header>
-      <div className="mt-2 text-gray-900 font-light">
+      <div className="mt-2 text-gray-900 font-dark">
         {summary ? truncate(article.body, 100) : article.body}
       </div>
       {!summary && (
